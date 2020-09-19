@@ -66,8 +66,8 @@ class DetailCountryFragment : Fragment() {
     private fun bindCountry(country: CountryItem) = with(binding) {
         ivFlag.loadSvgOrOthers(country.flag)
         tvName.text = country.name
-        tvCurrency.text = country.currencies?.map { it.name }?.joinToString (separator = ",")
-        tvLanguage.text = country.languages?.map { it.name }?.joinToString(separator = ",")
+        tvCurrency.text = country.currencies?.joinToString(separator = ", ") { it.name }
+        tvLanguage.text = country.languages?.joinToString(separator = ", ") { it.name }
         tvTimeZone.text = country.timezones?.joinToString (separator = "\n")
     }
 
