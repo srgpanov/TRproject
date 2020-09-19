@@ -61,6 +61,5 @@ class CountryListViewModel @Inject constructor(
 
     private fun fillCountries(countryList: List<CountryItem>): List<CountryItem> {
         return countryList
-
     }
 }

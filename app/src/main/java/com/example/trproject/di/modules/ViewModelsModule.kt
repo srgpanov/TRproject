@@ -16,11 +16,7 @@ abstract class ViewModelsModule {
     @Binds
     internal abstract fun bindViewModelFactory(factory: ViewModelFactory): ViewModelProvider.Factory
 
-    // TODO: 16.09.2020 раскоментировать 
-//    @Binds
-//    @IntoMap
-//    @ViewModelKey(DetailCountryViewModel::class)
-//    internal abstract fun detailCountryViewModel(viewModel: DetailCountryViewModel): ViewModel
+
 
     @Binds
     @IntoMap
