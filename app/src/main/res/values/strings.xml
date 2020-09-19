@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TRproject</string>
+    <string name="error_prefix">something goes wrong</string>
+</resources>

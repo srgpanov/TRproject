@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_country_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sqreens.detail_country.DetailCountryFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <View
+        android:id="@+id/view_status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/status_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        tools:text="Background concurrent "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_flag"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_currency"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_currency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_currency"
+        app:layout_constraintTop_toTopOf="@id/tv_currency"/>
+    <TextView
+        android:id="@+id/tv_currency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintStart_toEndOf="@id/iv_currency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:text = "I/ViewTarget:."
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_language"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_lang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_language"
+        app:layout_constraintTop_toTopOf="@id/tv_language"/>
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintStart_toEndOf="@id/iv_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_currency"
+        tools:text = "I/ViewTarget:."
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_timezones"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_time_zones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_time_zone"
+        app:layout_constraintTop_toTopOf="@id/tv_time_zone"/>
+    <TextView
+        android:id="@+id/tv_time_zone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:lineSpacingMultiplier="1.50"
+        app:layout_constraintStart_toEndOf="@id/iv_timezones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_language"
+        tools:text = "I/ViewTarget:."
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
